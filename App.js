@@ -68,7 +68,7 @@ export default class Login extends Component {
         }
       }, (err, res) => {
             this.setState({userData : res})
-      });
+      }); 
       new GraphRequestManager().addRequest(req).start();
     }
     
